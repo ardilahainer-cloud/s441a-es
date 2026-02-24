@@ -97,7 +97,46 @@ public class Estudiante {
                 + notaPromedio + ", edad=" + edad + "]";
      }
 
-     
+     public static double filtrarEstudiantes(Estudiante[] est) {
+
+    double suma = 0;
+
+    int contador = 0;
+
+    for (int i = 0; i < est.length; i++) {
+
+        if (est[i].getSemestre() == 3 &&
+
+            est[i].getPrograma().equalsIgnoreCase("Ingieneria Sistema")) {
+
+            System.out.println("Nombre: " + est[i].getNombre() +
+
+                               " | Programa: " + est[i].getPrograma() +
+
+                               " | Promedio: " + est[i].getNotaPromedio());
+
+            suma += est[i].getNotaPromedio();
+
+            contador++;
+
+        }
+
+    }
+
+    if (contador > 0) {
+
+        return suma / contador;
+
+    } else {
+
+        System.out.println("No hay estudiantes que cumplan la condición.");
+
+        return 0;
+
+    }
+
+}
+ 
     
         
 
