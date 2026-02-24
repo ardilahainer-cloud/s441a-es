@@ -4,8 +4,8 @@ public class EjecutarEstudiante {
     public static void main(String[] args) {
         Estudiante objE = new Estudiante();
         Estudiante[]est=new Estudiante[4];
-        est[0]= new Estudiante("luis",3,"Ingieneria Industrial",3.4,34);
-        est[1]= new Estudiante("dory",2,"Ingieneria Sistema ",3.9,18);
+        est[0]= new Estudiante("luis",3,"Ingieneria Sistema",3.4,34);
+        est[1]= new Estudiante("dory",2,"Ingieneria Sistema",3.9,18);
         est[2]= new Estudiante("jaime",5,"Trabajo social",3.5,12);
         est[3]= new Estudiante("adrian",3,"Ingieneria Industrial ",2.5,25);
         
@@ -33,8 +33,7 @@ public class EjecutarEstudiante {
         System.out.println(objE.calcularEdadPromedio(edades));
 
      double promedioFiltrado = Estudiante.filtrarEstudiantes(est);
-
-System.out.println("Promedio de estudiantes filtrados: " + promedioFiltrado);
+    System.out.println("Promedio de estudiantes filtrados: " + promedioFiltrado);
  
 
         
