@@ -27,4 +27,21 @@ public class OperacionesMatrices {
         }
         return cad;
     }
+
+    public int[][] mayorMenor(int [][] m1, int [][] m2){
+        int [][] m3 = new int [m1.length][m1[0].length];
+        for (int i = 0; i < m1.length; i++){
+            for (int j = 0; j < m1[0].length; j++){
+                if (m1[i][j] > m2[i][j]){
+                    m3[i][j] = m1[i][j];
+                } else {
+                    m3[i][j] = m2[i][j];
+                }
+            }
+        }
+        return m3;
+    }
+
+
+
 }

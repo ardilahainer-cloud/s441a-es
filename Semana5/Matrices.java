@@ -43,6 +43,8 @@ public class Matrices {
         OperacionesMatrices op = new OperacionesMatrices();
          int [][] m = op.llenarMatriz(5, 5, 1, 9);
         System.out.println(op.mostrarMatriz(m));
+        int [][] m3 = op.mayorMenor(m1, m);
+        System.out.println(op.mostrarMatriz(m3));
     }
     
 }
